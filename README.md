@@ -3,7 +3,7 @@
 
 ## User Story
 
-* As a USER I want to a functioning hotel website so that I am able to book a room using the Book Now feature that emails a confirmation when I book a room.
+* As a USER I want to a functioning hotel website so that I am able to book a room using the Book Now feature that emails a confirmation when I book a room (with calendar pop-out.)
 
 * As a USER I want to see pictures of the hotel with explanation of amenities being offered.
 
