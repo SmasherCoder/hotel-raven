@@ -18,6 +18,8 @@
 
 * It is done when the website meets the acceptance criteria when the source code is pulled.
 
+* It is done when I find accessible alt atributes when I view the heading attributes.
+
 * It is done when the website has a fully functional Book Now feature and stores this data within the local storage.
 
 * It is done when the Book Now feature has a room type, number of people staying at the hotel, and dates to pick when to stay to choose from.
@@ -33,6 +35,8 @@
 * It is done when the API for the google map of the hotel successfully deploys on the Contact Us page.
 
 * It is done when the pages are fully responsive to Apple products/ Samsung and others, as well as being responsive when the user wants to expand or minimize the pages.
+
+* It is done when I find that the elements follow a logical structure independent of styling and positioning when I view the image elements.
 
 
 ## Website:
