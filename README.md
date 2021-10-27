@@ -1,4 +1,3 @@
-<<<<<<< HEA# Hotel Raven Group Project
 # Hotel Raven Group Project
 
 ## User Story
@@ -14,8 +13,6 @@
 * As a USER to see the current weather widget on the homepage navigation bar of the site where the hotel is located. (current temperature with weather icon.)
 
 * As a USER I want to see tha available room types. (2 queen beds, 1 king, Handicap rooms.)
-
-=======
 
 ## Acceptance Criteria:
 
