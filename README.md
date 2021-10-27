@@ -10,7 +10,7 @@
 
 * As a USER I want a map of where the hotel is located.
 
-* As a USER to see the current weather widget on the homepage navigation bar of the site where the hotel is located. (current temperature with weather icon.)
+* As a USER I to see the current weather widget on the homepage navigation bar of the site where the hotel is located. (current temperature with weather icon.)
 
 * As a USER I want to see tha available room types. (2 queen beds, 1 king, Handicap rooms.)
 
