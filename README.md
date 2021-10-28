@@ -32,7 +32,7 @@
 
 * It is done when the Contact Us page is a completely seperate page from the Home page.
 
-* It is done when the API for the google map of the hotel successfully deploys on the Contact Us page.
+* It is done when the API for the open layers map of the hotel successfully deploys on the Contact Us page.
 
 * It is done when the pages are fully responsive to Apple products/ Samsung and others, as well as being responsive when the user wants to expand or minimize the pages.
 
