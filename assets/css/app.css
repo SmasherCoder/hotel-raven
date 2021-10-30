@@ -7,3 +7,11 @@
 .text-center {
     text-align: center;
 }
+
+.color-block {
+  height: 400px;
+  width: 560px;
+  padding: 20px;
+  background-color: orangered;
+  text-align: center;
+}
