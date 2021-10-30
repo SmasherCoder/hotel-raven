@@ -1,18 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to the Hotel Raven</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/ui-darkness/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.0/themes/ui-darkness/jquery-ui.css"
+    />
     <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css" integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css"
+      integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4="
+      crossorigin="anonymous"
+    />
     <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css" integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
+      integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok="
+      crossorigin="anonymous"
+    />
     <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css" integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
+      integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- Header / Nav Bar / Book Now -->
@@ -31,16 +49,26 @@
         <form action="">
           <div>
             <label for="arrival">Arrival Date:</label>
-            <input name="arrival" type="text" class="datepicker" placeholder="Arrival Date">
+            <input
+              name="arrival"
+              type="text"
+              id="arrivalPicker"
+              placeholder="Arrival Date"
+            />
             <label for="departure">Departure Date:</label>
-            <input name="departure" type="text" class="datepicker" placeholder="Departure Date">
+            <input
+              name="departure"
+              type="text"
+              id="departPicker"
+              placeholder="Departure Date"
+            />
           </div>
           <div>
             <label for="spinner">Number of Guest:</label>
-            <input id="spinner" name="value">
+            <input id="spinner" name="value" />
           </div>
           <div class="form-group">
-            <select name="room-type" class="select-dropdown">
+            <select id="room" name="room-type" class="select-dropdown">
               <option value="" disabled selected>Pick a bed type</option>
               <option value="king">King size bed</option>
               <option value="queen">Queen size bed</option>
@@ -48,22 +76,28 @@
             </select>
           </div>
           <div>
-            <button id="submit-btn" class="btn" type="submit"> Submit </button>
+            <button id="submit-btn" class="btn" type="submit">Submit</button>
           </div>
-        </form>   
+        </form>
       </div>
       <div id="room-details">
         <div>
           <h4>King Size:</h4>
-          <p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>
+            Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
         </div>
         <div>
           <h4>Queen Size:</h4>
-          <p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>
+            Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
         </div>
         <div>
           <h4>Full Size:</h4>
-          <p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>
+            Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
         </div>
       </div>
     </section>
@@ -71,8 +105,16 @@
     <!-- Footer -->
     <!-- Name, Address, Phone number, Email, Map Widget -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js" integrity="sha256-xH4q8N0pEzrZMaRmd7gQVcTZiFei+HfRTBPJ1OGXC0k=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"
+      integrity="sha256-xH4q8N0pEzrZMaRmd7gQVcTZiFei+HfRTBPJ1OGXC0k="
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
