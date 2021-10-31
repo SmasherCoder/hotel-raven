@@ -1,51 +1,64 @@
-// var arrivalInput = document.querySelector("input[name='arrival']").textContent;
-var reservationObj = {
-  arrival: 'dd/mm/yyyy',
-  depart: 'dd/mm/yyyy',
-  guest: guestCountInput,
-  roomType: roomTypeInput
-};
 var buttonEl = document.querySelector("#submit-btn");
-var guestCountInput = document.querySelector("#spinner").value;
-var roomTypeInput = document.querySelector("#room").value;
 
+var reservationObj = {
+  arrival: null,
+  depart: null,
+  guest: 0,
+  room: null,
+};
 
 // Date selector
-$( function() {
+$(function () {
   var minDate = new Date();
-    $( '#arrivalPicker' ).datepicker({
-      showAnim: 'bounce',
-      minDate: minDate
-    });
-    $('#arrivalPicker').on("change",function(){
-      reservationObj.arrival = $(this).val();
-      console.log(reservationObj);
-    });
-
-    $( '#departPicker' ).datepicker({
-      showAnim: 'bounce',
-      minDate: minDate
-    });
-    $('#departPicker').on("change",function(){
-      reservationObj.depart = $(this).val();
-      console.log(reservationObj);
-    });
-    console.log(reservationObj);
-} );
+  // Arrival Date Selector
+  $("#arrivalPicker").datepicker({
+    showAnim: "bounce", // sets bounce animation
+    minDate: minDate, // limits selectable dates to present/future
+  });
+  $("#arrivalPicker").on("change", function () {
+    reservationObj.arrival = $(this).val(); //returns the value to the obj
+  });
+  // Departure Date Selector
+  $("#departPicker").datepicker({
+    showAnim: "bounce", // sets bounce animation
+    minDate: minDate, // limits selectable dates to present/future
+  });
+  $("#departPicker").on("change", function () {
+    reservationObj.depart = $(this).val(); //returns the value to the obj
+  });
+});
 
 // Guest Head Count
-$( function() {
-  var spinner = $( "#spinner" ).spinner();
-  reservationObj.guest = $(this).val();
-} );
-
-console.log(reservationObj);
-buttonEl.addEventListener('click', () => {
-    // localStorage.setItem(JSON.stringify(reservationObj));
-    console.log(reservationObj);
-    $( '#arrivalPicker' ).datepicker() = '';
-    $( '#departPicker' ).datepicker() = '';
-    guestCountInput = '';
-    roomTypeInput = '';
+$(function () {
+  var spinner = $("#spinner").spinner({
+    max: 3,
+    min: 1,
+  });
+  $("#spinner").on("spinchange", function (event, ui) {
+    reservationObj.guest = spinner.spinner("value"); //returns the value to the obj
+  });
 });
-  
+
+// Room type selector
+$("#roomType").on("change", function () {
+  reservationObj.room = $("#roomType").val(); //returns the value to the obj
+});
+
+// Trigger the Submit button to store the options selected in Local Storage
+buttonEl.addEventListener("click", () => {
+  if (
+    reservationObj.arrival === null ||
+    reservationObj.depart === null ||
+    reservationObj.guest === 0 ||
+    reservationObj.room === null
+  ) {
+    alert("All fields are required.");
+  } else {
+    localStorage.setItem("reservationObj", JSON.stringify(reservationObj));
+    console.log(reservationObj);
+
+    // Retrieve the object from storage and Log it
+    var retrievedObject = localStorage.getItem("reservationObj");
+    console.log("retrievedObject: ", JSON.parse(retrievedObject));
+  }
+});

@@ -68,15 +68,16 @@
             <input id="spinner" name="value" />
           </div>
           <div class="form-group">
-            <select id="room" name="room-type" class="select-dropdown">
-              <option value="" disabled selected>Pick a bed type</option>
+            <label for="roomType"> Select a Bed Type:</label>
+            <select id="roomType" name="roomType" class="select-dropdown">
+              <option value="empty" disabled selected>Pick a bed type</option>
               <option value="king">King size bed</option>
               <option value="queen">Queen size bed</option>
               <option value="full">Full size bed</option>
             </select>
           </div>
           <div>
-            <button id="submit-btn" class="btn" type="submit">Submit</button>
+            <button id="submit-btn" class="btn" type="button">Submit</button>
           </div>
         </form>
       </div>
