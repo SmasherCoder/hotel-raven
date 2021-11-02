@@ -4,17 +4,49 @@ section{
 
 h2 {
     text-align: center;
+    font-family: Henny Penny;
+    color: whitesmoke;
 }
 
 ul {
     text-align: center;
     justify-content: center;
     list-style-type: circle;
+    font-family: El Messiri, sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+  }
+  h3{
+    color: whitesmoke;
+    font-family: El Messiri, sans-serif;
   }
 
+  ul li{
+    font-family: El Messiri, sans-serif;
+    font-size: 20px;
+    list-style-type: circle;
+    color: whitesmoke;
+    list-style-position: inside;
+    text-align: center;
+  }
 
 form {
     display: flex;
+}
+.caption{
+  font-weight: italic;
+    margin: 0;
+    font-size: 25px;
+    color:whitesmoke;
+    text-align: center;
+}
+
+section{
+  background-image: url('https://img.freepik.com/free-photo/downtown-skyline-austin-texas-usa-from-top-view-sunset_255553-478.jpg?size=626&ext=jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
 }
 
 header {
