@@ -13,3 +13,6 @@ ul {
   }
 
 
+form {
+    display: flex;
+}
