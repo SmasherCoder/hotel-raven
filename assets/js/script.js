@@ -9,11 +9,11 @@ var getWeather = function (url) {
       if (response.ok) {
         response.json().then(function (data) {
           console.log(data);
-          var temp= (data.main.temp)
+          var temp = (data.main.temp)
           tempEl.textContent = temp; 
+          $("#wicon").attr("src",`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
           console.log (temp)
           });
-          
     } else {
         alert("There was a problem with your request!");
      }
