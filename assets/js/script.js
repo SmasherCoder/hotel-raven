@@ -53,4 +53,4 @@ $("#SearchForTheCity").on("click", ".previous", function () {
             success: function (apiData) {
                 console.log(apiData)
             }
-        })
+        });
