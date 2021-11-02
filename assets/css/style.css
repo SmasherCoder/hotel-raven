@@ -1,16 +1,19 @@
-main {
+/* Intro Image */
+.hero {
     background-image: url(../../towerbkg.jpg);
-    background-repeat: no-repeat;
+    height: 600px;
     background-size: cover;
-    opacity: 75%;
-    height: 100vh;
+    background-position: center;
+    position: relative;
+    margin-top: 75px;
+    
 }
 
 .intro {
     text-align: center;
- 
-    position: relative;
+     position: relative;
     top: 20%;
+
     
 }
 .container {
@@ -20,6 +23,7 @@ main {
 
 
 }
+/* intro title */
 .section-title {
     font-family: 'Henny Penny', cursive;
     text-decoration: underline;
@@ -27,11 +31,24 @@ main {
     color:rgb(10, 10, 10);
     width: 80%;
     font-size: 50px;
-    margin: 25px auto;
+    margin: 20px auto;
+    color: rgb(63, 40, 3);
 }
 p {
     font-family: 'El Messiri', sans-serif;
     font-size: 20pt;
-    color:rgb(5, 1, 1);
     font-weight: 300;
+    line-height: 1.8;
+    color: rgb(63, 40, 3);
+    width: 80%;
+    font-size: 20px;
+    margin: 10px auto;
+
 }
+section {
+    padding: 60px;
+
+}
+
+
+    
