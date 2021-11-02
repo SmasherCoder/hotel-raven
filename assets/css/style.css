@@ -1,0 +1,43 @@
+form {
+    display: flex;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: #662900;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    font-weight: italic;
+    margin: 0;
+    font-size: 36px;
+    color: #000000;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2.55vw;
+  }
+  
+  /* HEADER / NAVBAR STYLES END */
