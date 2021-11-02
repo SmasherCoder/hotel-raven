@@ -29,28 +29,5 @@ function currentForecast(cityname) {
             }
         }
     })
-}
-displayCitySearch()
-
-function displayCitySearch() {
-    var Storage = JSON.parse(localStorage.getItem("weatherAPI")) || []
-    var cityHTML = ""
-    $("#SearchForTheCity").html("<h1 class='bg-warning m-2 p-2'>Previous Search</h1>")
-    for (let i = 0; i < Storage.length; i++) {
-        cityHTML += `<p><button class="previous btn btn-primary">${Storage[i]}</button></p>`
-    }
-
-    $("#SearchForTheCity").append(cityHTML)
-}
-$("#SearchForTheCity").on("click", ".previous", function () {
-    var city = $(this).text()
-    currentForecast(city)
-})
-            function dayForecast(lat, lon) {
-        $.ajax({
-
-            url: `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`,
-            success: function (apiData) {
-                console.log(apiData)
-            }
-        })
+}    
+        
