@@ -1,0 +1,126 @@
+section{
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    justify-content: center;
+    list-style-type: circle;
+  }
+
+
+form {
+    display: flex;
+}
+
+header {
+    padding: 20px 35px;
+    background-image:linear-gradient(270deg,#662900,white,brown,yellow);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    font-weight: italic;
+    margin: 0;
+    font-size: 36px;
+    color: #000000;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    font-size: 16px;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2.55vw;
+  }
+  
+  /* HEADER / NAVBAR STYLES END */
+#weather{
+    top:20;
+    max-width:20vw;
+    height:25vh;
+    z-index:1;
+    left: 0;
+    background-color: beige;
+    text-align: center;
+    box-shadow: 8px black;
+}
+
+
+/* Intro Image */
+.hero {
+    background-image: url(../../towerbkg.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 75px;
+    
+}
+
+.intro {
+    text-align: center;
+     position: relative;
+    top: 20%;
+
+    
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+
+
+}
+/* intro title */
+.section-title {
+    font-family: 'Henny Penny', cursive;
+    text-decoration: underline;
+    line-height: 1.7;
+    color:rgb(10, 10, 10);
+    width: 80%;
+    font-size: 50px;
+    margin: 20px auto;
+    color: rgb(63, 40, 3);
+}
+p {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 20pt;
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgb(63, 40, 3);
+    width: 80%;
+    font-size: 20px;
+    margin: 10px auto;
+
+}
+section {
+    padding: 60px;
+
+}
+
+
+    
