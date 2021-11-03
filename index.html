@@ -225,13 +225,13 @@
   </div>
 
 <!-- Name, Address, Phone number, Email, Map Widget -->
-<footer>
+<footer id="contact-us">
   <h2>&#9760; Hotel Raven &#9760;</h2>
   <div>
     <a href="#"> Read Our Privacy Policy</a><br />
     &copy; 2021 Hotel Raven, Inc.
   </div>
-  <address id="contact-us">
+  <address>
     Contact Hotel staff at <a href="./about.html">
       www.hotelraven.com</a>.<br>
     Visit us at: <br>
@@ -242,13 +242,20 @@
     &#9742; Local 512.345.6545<br>
     &#9742; Toll-free 800.546.5466<br>
   </address>
-  <form input id="emailAddress" type="email" multiple>
-    <label for="Email">Enter your email address</label>
-    <input type="email" id="email" pattern=".+hotelraven/.com/about" size="64" required>
-    <button name="button">Submit</button>
+  <h5>Login</h5>
+  <form class="form-inline" action="/action_page.php">
+    <label for="email">Email:</label>
+    <input type="email" id=background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;"email" placeholder="Enter email" name="email">
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+    <label>
+      <input type="checkbox" name="remember"> Remember me
+    </label>
+    <button type="submitted">Submit</button>
   </form>
 </footer>
-
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"
