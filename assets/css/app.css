@@ -6,6 +6,9 @@
 
 h1 {
   margin-top: 50px;
+  font-family: 'Henny Penny', cursive;
+  text-decoration: underline;
+  font-size: 48px;
 }
 
 .text-center {
