@@ -51,74 +51,39 @@ section{
 }
 
 header {
-  padding: 20px 35px;
+  padding: 5px 5px 0px 20px;
   background-color: #d65804;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* padding: 20px 35px;
-    background-image:linear-gradient(270deg,#662900,white,brown,yellow);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  header h1 {
-    font-weight: italic;
-    margin: 0;
-    font-size: 36px;
-    color: #000000;
-  }
-  
-  header a {
-    text-decoration: none;
-    color: #000000;
-  }
-  
-  header nav {
-    margin: 7px 0;
-  }
-  
-  header nav ul {
-    font-size: 16px;
-    font-weight: bolder;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-  
-  header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 2.55vw;
-  }
-  
-  HEADER / NAVBAR STYLES END
-
-Intro Image
-.hero {
-    background-image: url(../../towerbkg.jpg);
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    margin-top: 75px; */
 
 #weather {
   top: 20;
   max-width: 20vw;
-  height: 25vh;
-  z-index: 1;
-  left: 0;
-  background-color: beige;
+  padding: 10px 50px 50px 50px; 
+  height: 20vh;
+  background-color: #d65804;
   text-align: center;
-  box-shadow: 8px black;
+  font-family: "El Messiri", sans-serif;
 }
+
+aside h6 {
+  font-family: "El Messiri", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+aside p {
+  font-family: "El Messiri", sans-serif;
+  margin-top: 15px;
+  font-size: 28px;
+  color: #fff;
+}
+
 header h1 {
   font-weight: italic;
-  margin: 0;
+  padding-top: 15px;
   font-size: 36px;
   color: #fff;
 }
