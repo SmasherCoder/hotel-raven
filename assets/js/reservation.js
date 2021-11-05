@@ -1,5 +1,5 @@
 var buttonEl = document.querySelector("#submit-btn");
-
+var modal = document.querySelector(".modalBox");
 var reservationObj = {
   arrival: null,
   depart: null,
@@ -54,6 +54,7 @@ buttonEl.addEventListener("click", () => {
   ) {
     alert("All fields are required.");
   } else {
+    $("#reserve-modal").show();
     localStorage.setItem("reservationObj", JSON.stringify(reservationObj));
     console.log(reservationObj);
 
@@ -61,4 +62,11 @@ buttonEl.addEventListener("click", () => {
     var retrievedObject = localStorage.getItem("reservationObj");
     console.log("retrievedObject: ", JSON.parse(retrievedObject));
   }
+});
+
+// $("#button").click(function () {
+//   $("#reserve-modal").show();
+// });
+$(".close-button").click(function () {
+  $("#reserve-modal").hide();
 });

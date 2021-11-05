@@ -83,60 +83,57 @@
 <section class="intro" class ="container">
     <h2 class="section-title primary-border">Hotel Raven</h2>
     <p>Enjoy our modern comfort and Luxury amenities at Hotel Raven located at Austin, a few blocks from downtown.Experience the luxury rooms,storied dining and excellent service that onlu Hotel Raven can provide.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut tempora perspiciatis ullam animi hic et est qui accusamus quas error sed corrupti, excepturi quia reiciendis, dolores obcaecati. Deleniti, nostrum suscipit.</p>
-      </div>
-     </section>
+</section>
   
-   
+<!-- Amenities Section -->
+<section id="ammend-section">
+  <h1>Hotel Raven Amenities</h1>
+  <a>
+    <ul>
+      <li>Check-In at 3:00pm & Check-Out 1:00pm</li>
+      <li>World Famous Bar Ravenite</li>
+      <li>Elevator Bartender</li>
+      <li>Pool and Spa service.</li>
+    </ul>
+    <h3>Room and Turndown Service.</h3>
+    <ul id="amentities">
+      <li>PIE Turndown Service</li>
+      <li>In-room Beer Taps</li>
+      <li>Mini-fridges</li>
+      <li>In-room Arcade Games</li>
+      <li>Celebrity Wake-up Calls</li>
+      <li>Customized Aromatherapy</li>
+    </ul>
+  </a>
 
-    <!-- Amenities Section -->
-    <section id="ammend-section">
-      <h1>Hotel Raven Amenities</h1>
-      <a>
-        <ul>
-          <li>Check-In at 3:00pm & Check-Out 1:00pm</li>
-          <li>World Famous Bar Ravenite</li>
-          <li>Elevator Bartender</li>
-          <li>Pool and Spa service.</li>
-        </ul>
-        <h3>Room and Turndown Service.</h3>
-        <ul id="amentities">
-          <li>PIE Turndown Service</li>
-          <li>In-room Beer Taps</li>
-          <li>Mini-fridges</li>
-          <li>In-room Arcade Games</li>
-          <li>Celebrity Wake-up Calls</li>
-          <li>Customized Aromatherapy</li>
-        </ul>
-      </a>
-
+  <div class="grid-x align-center-middle collapse">
+    <div class="cell small-12 medium-8 large-8">
       <div class="grid-x align-center-middle collapse">
-        <div class="cell small-12 medium-8 large-8">
-          <div class="grid-x align-center-middle collapse">
-            <div class="cell small-12 medium-12 large-6 image-block">
-              <img src="./assets/images/room-king.jpeg" class="image-block" alt="king sized room" />
-            </div>
-            <div class="cell small-12 medium-12 large-6 color-block">
-              <h3>Hotel Raven</h3> 
-              <h3>Premium King Suite</h3>
-            </div>
-          </div>
+        <div class="cell small-12 medium-12 large-6 image-block">
+          <img src="./assets/images/room-king.jpeg" class="image-block" alt="king sized room" />
         </div>
-      </div>
-      
-      <div class="grid-x align-center-middle collapse">
-        <div class="cell small-12 medium-8 large-8">
-          <div class="grid-x align-center-middle collapse">
-            <div class="cell small-12 medium-12 large-6 color-block">
-              <h3>Hotel Raven</h3>
-              <h3>Premium Queen Suite</h3>
-            </div>
-            <div class="cell small-12 medium-12 large-6 image-block">
-              <img src="./assets/images/room-queen.jpeg" class="image-block" alt="queen sized room" />
-            </div>
-          </div>
+        <div class="cell small-12 medium-12 large-6 color-block">
+          <h3>Hotel Raven</h3> 
+          <h3>Premium King Suite</h3>
         </div>
       </div>
     </div>
+  </div>
+  
+  <div class="grid-x align-center-middle collapse">
+    <div class="cell small-12 medium-8 large-8">
+      <div class="grid-x align-center-middle collapse">
+        <div class="cell small-12 medium-12 large-6 color-block">
+          <h3>Hotel Raven</h3>
+          <h3>Premium Queen Suite</h3>
+        </div>
+        <div class="cell small-12 medium-12 large-6 image-block">
+          <img src="./assets/images/room-queen.jpeg" class="image-block" alt="queen sized room" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       
       <div class="grid-x align-center-middle collapse">
         <div class="cell small-12 medium-8 large-8">
@@ -218,27 +215,26 @@
               <option value="full">Premium Full Suite</option>
             </select>
           </div>
-          <div>
-            <button
-              data-open="settings-modal"
+          <button
+              data-open="reserve-modal"
               id="submit-btn"
-              class="btn"
+              class="button secondary "
               type="button"
             >
               Submit
             </button>
-          </div>
-          <div class="reveal" id="settings-modal" data-reveal>
-            <h1>Confirmation!</h1>
-            <p>Your reservation has been submitted.</p>
+          <div class="modalBox" id="reserve-modal">
+            <h2>Your reservation has been submitted.</h2>
+            <p class="lead">Thank you & enjoy your stay!</p>
+            <p>“Those who dream by day are cognizant of many things which escape those who dream only by night.”</p>
+            <p>-Poe</p>
+            <button class="close-button button alert tiny" aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
         </form>
       </div>
     </section>
-
-    
-  </div>
-</section>
 
 <!-- Footer -->
 <!-- Name, Address, Phone number, Email, Map Widget -->
@@ -273,13 +269,15 @@
     <button type="submitted">Submit</button>
   </form>
 </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
-
+<!-- jQuery link -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- jQueryUI link -->
 <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"
   integrity="sha256-xH4q8N0pEzrZMaRmd7gQVcTZiFei+HfRTBPJ1OGXC0k=" crossorigin="anonymous"></script> -->
+<!-- Main scripts -->
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/reservation.js"></script>
 </body>
-
 </html>
