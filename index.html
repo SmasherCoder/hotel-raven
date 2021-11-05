@@ -35,10 +35,10 @@
     <nav>
       <ul>
         <li>
-          <a href="./index.html#book-now" id="book-now">Book Now</a>
+          <a href="#book-now" class="book-now">Book Now</a>
         </li>
         <li>
-          <a href="./index.html#intro">Ammenities</a>
+          <a href="#amenities">Amenities</a>
         </li>
         <li>
           <a href="./about.html">About Us</a>
@@ -82,7 +82,7 @@
 
   <!-- Amenities Section -->
 
-    <section class="font-color text-center">
+    <section id="amenities" class="font-color text-center">
       <h1>Hotel Raven Amenities</h1>
       <p>Check-In at 3:00pm & Check-Out 1:00pm</p>
       <p>World Famous Bar Ravenite</p>
@@ -171,11 +171,11 @@
     </section>
 
   <!-- Reservation / Book Now Section -->
-  <section id="reservation-section">
+  <section id="reservation-section" class="grid-container">
     <address id="book-now"></address>
-    <div id="reservation-form" class="row">
-      <form action="">
-        <div>
+      <form id="reservation-form" class="align-center-middle">
+        <!-- Datepicker -->
+        <div id="datepicker" class="align-center-middle collapse">
           <label for="arrival">Arrival Date:</label>
           <input
             name="arrival"
@@ -191,11 +191,13 @@
             placeholder="Departure Date"
           />
         </div>
-        <div>
+        <!-- Guest Count -->
+        <div id="guest-count" class="align-center-middle collapse">
           <label for="spinner">Number of Guest:</label>
           <input id="spinner" name="value" />
         </div>
-        <div class="form-group">
+        <!-- Room Selector -->
+        <div id="room-select" class="form-group align-center-middle collapse">
           <label for="roomType"> Select a Bed Type:</label>
           <select id="roomType" name="roomType" class="select-dropdown">
             <option value="empty" disabled selected>Select a Suite Type</option>
@@ -204,15 +206,17 @@
             <option value="full">Premium Full Suite</option>
           </select>
         </div>
-        <div>
+        <!-- Submit Button -->
+        <div id="btn-container" class="align-center-middle collapse">
           <button
             id="submit-btn"
-            class="button secondary "
+            class="button secondary cell"
             type="button"
           >
-            Submit
+            Book Now!
           </button>
         </div>
+        <!-- Modal Pop up -->
         <div class="modalBox text-center" id="reserve-modal">
           <h2>Your reservation has been submitted.</h2>
           <h3 class="lead">Thank you & enjoy your stay!</h3>
@@ -223,7 +227,7 @@
           </button>
         </div>
       </form>
-    </div>
+
   </section>
 
   <!-- Footer -->

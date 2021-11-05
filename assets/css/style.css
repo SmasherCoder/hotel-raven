@@ -41,7 +41,7 @@ p {
   font-size: 42px;
 }
 
-#book-now {
+.book-now {
   font-style: italic;
   text-decoration: underline;
 }
@@ -151,6 +151,17 @@ footer a {
   font-style: italic;
 }
 
+#reservation-form {
+  background: #d65804;
+  padding: 20px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
 /* Modal */
 .modalBox {
   display: none;
@@ -158,11 +169,12 @@ footer a {
   z-index: 11111;
   left: 25%;
   top: 25%;
-  width: 45%;
+  width: 55%;
   padding: 20px;
   border: 1px solid #ccc;
   box-shadow: 0px 0px 10px #ccc;
-  background: white;
+  background: rgb(69, 69, 69);
+  color: #d65804;
 }
 
 @media screen and (max-width: 724px) {
