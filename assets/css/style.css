@@ -164,10 +164,12 @@ footer a {
 
 #reservation-section input {
   background-color: black;
+  color: #fff;
 }
 
 #reservation-section select {
   background-color: black;
+  color: #fff;
 }
 
 #reservation-section button {
