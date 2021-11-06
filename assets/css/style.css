@@ -162,6 +162,18 @@ footer a {
   align-items: stretch;
 }
 
+#reservation-section input {
+  background-color: black;
+}
+
+#reservation-section select {
+  background-color: black;
+}
+
+#reservation-section button {
+  background-color: black;
+}
+
 /* Modal */
 .modalBox {
   display: none;
@@ -182,8 +194,20 @@ footer a {
     height: 17em;
   }
 
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
   .color-block {
     height: 18em;
+  }
+
+  header nav ul li a {
+    font-size: 18px;
   }
 
   h5 {
@@ -207,4 +231,5 @@ footer a {
     margin-left: 80%;
     height: auto;
   }
+  
 }
