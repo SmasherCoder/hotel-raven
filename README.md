@@ -38,6 +38,10 @@
 
 * It is done when I find that the elements follow a logical structure independent of styling and positioning when I view the image elements.
 
+## Technologies Used: 
+* VS Code
+* Foundation CSS framework
+* jQuery & jQueryUI
 
 ## Website:
 
