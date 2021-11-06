@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/ui-darkness/jquery-ui.css" />
   <!-- Foundation Framework Link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.3/dist/css/foundation.min.css">
-  <!-- Main Style Sheet -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css"
     integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
@@ -24,28 +22,36 @@
     integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Henny+Penny&display=swap" rel="stylesheet">
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
   <!-- Header / Nav Bar / Book Now -->
   <header>
-    <h1>Hotel Raven</h1>
+    <h1><a href="./index.html" class="header-font">Hotel Raven</a></h1>
     <nav>
       <ul>
         <li>
-          <a href="./index.html">Home</a>
+          <a href="#book-now" class="book-now">Book Now</a>
+        </li>
+        <li>
+          <a href="#amenities">Amenities</a>
         </li>
         <li>
           <a href="./about.html">About Us</a>
         </li>
         <li>
-          <a href="./index.html#book-now">Book Now</a>
-        </li>
-        <li>
-          <a href="./index.html#contact-us">Contact Us</a>
+          <aside id="weather">
+            <h6>Austin Forecast</h6>
+            <h2 id="weatherdashtitle">
+              <p><span id="temp">temp</span>ºF</p>
+              <span id="icon"><img id="wicon" src="" alt=""></span>
+            </h2>
+          </aside>
         </li>
       </ul>
+
     </nav>
   </header>
   <div class="mobileFullNav navContainer">
@@ -56,44 +62,40 @@
       </ul>
     </div>
   </div>
-  <!-- Weather bar -->
-  <aside id="weather">
-  <h6>Austin Forecast</h6>
-  <h2 id="weatherdashtitle">
-    <p><span id="temp">temp</span>ºF</p>
-    <span id="icon"><img id= "wicon" src= "" alt =""></span>
-  </h2>
-  </aside>  
   </header>
-    <!-- Showcase Images -->
-  <main><img src="./assets/images/towerbkg.jpg" alt="Longhorn tower" class="responsive"></main>
-    <section class="intro" class ="container">
-    <h2 class="section-title primary-border">Hotel Raven</h2>
-    <p>Enjoy our modern comfort and Luxury amenities at Hotel Raven located at Austin, a few blocks from downtown.Experience the luxury rooms,storied dining and excellent service that onlu Hotel Raven can provide.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut tempora perspiciatis ullam animi hic et est qui accusamus quas error sed corrupti, excepturi quia reiciendis, dolores obcaecati. Deleniti, nostrum suscipit.</p>
-      </div>
+
+  </header>
+
+  <!-- Showcase Images -->
+  <main><img src="./assets/Images/towerbkg.jpg" alt="Longhorn tower" class="responsive"></main>
+  
+  <!-- Intro Section -->
+  <section class="font-color text-center">
+    <h1>Hotel Raven</h1>
+    <p>Enjoy our modern comfort and Luxury amenities at Hotel Raven located at Austin, a few blocks from
+      downtown. Experience the luxury rooms,storied dining and excellent service that onlu Hotel Raven can provide</p>
+  </section>
+
+
+
+  <!-- Amenities Section -->
+
+    <section id="amenities" class="font-color text-center">
+      <h1>Hotel Raven Amenities</h1>
+      <p>Check-In at 3:00pm & Check-Out 1:00pm</p>
+      <p>World Famous Bar Ravenite</p>
+      <p>Elevator Bartender</p>
+      <p>Pool and Spa service.</p>
+      <p>Room and Turndown Service.</p>
+      <p>PIE Turndown Service</p>
+      <p>In-room Beer Taps</p>
+      <p>Mini-fridges</p>
+      <p>In-room Arcade Games</>
+      <p>Celebrity Wake-up Calls</h5>
+      <p>Customized Aromatherapy</h5>
     </section>
 
-    <!-- Amenities Section -->
-    <section>
-      <h1>Hotel Raven Amenities</h1>
-      <a>
-        <ul>
-          <li>Check-In at 3:00pm & Check-Out 1:00pm</li>
-          <li>World Famous Bar Ravenite</li>
-          <li>Elevator Bartender</li>
-          <li>Pool and Spa service.</li>
-        </ul>
-        <h1>Room and Turndown Service.</h1>
-        <ul>
-          <li>PIE Turndown Service</li>
-          <li>In-room Beer Taps</li>
-          <li>Mini-fridges</li>
-          <li>In-room Arcade Games</li>
-          <li>Celebrity Wake-up Calls</li>
-          <li>Customized Aromatherapy</li>
-        </ul>
-      </a>
-
+    <section class="text-center">
       <div class="grid-x align-center-middle collapse">
         <div class="cell small-12 medium-8 large-8">
           <div class="grid-x align-center-middle collapse">
@@ -101,19 +103,19 @@
               <img src="./assets/images/room-king.jpeg" class="image-block" alt="king sized room" />
             </div>
             <div class="cell small-12 medium-12 large-6 color-block">
-              <h3>Hotel Raven</h3> 
-              <h3>Premium King Suite</h3>
+              <h1>Hotel Raven</h1>
+              <h1>Premium King Suite</h1>
             </div>
           </div>
         </div>
       </div>
-      
+
       <div class="grid-x align-center-middle collapse">
         <div class="cell small-12 medium-8 large-8">
           <div class="grid-x align-center-middle collapse">
             <div class="cell small-12 medium-12 large-6 color-block">
-              <h3>Hotel Raven</h3>
-              <h3>Premium Queen Suite</h3>
+              <h1>Hotel Raven</h1>
+              <h1>Premium Queen Suite</h1>
             </div>
             <div class="cell small-12 medium-12 large-6 image-block">
               <img src="./assets/images/room-queen.jpeg" class="image-block" alt="queen sized room" />
@@ -121,7 +123,8 @@
           </div>
         </div>
       </div>
-      
+      </div>
+
       <div class="grid-x align-center-middle collapse">
         <div class="cell small-12 medium-8 large-8">
           <div class="grid-x align-center-middle collapse">
@@ -129,8 +132,8 @@
               <img src="./assets/images/room-full.jpeg" class="image-block" alt="full sized room" />
             </div>
             <div class="cell small-12 medium-12 large-6 color-block">
-              <h3>Hotel Raven</h3>
-              <h3>Premium Full Suite</h3>
+              <h1>Hotel Raven</h1>
+              <h1>Premium Full Suite</h1>
             </div>
           </div>
         </div>
@@ -140,11 +143,11 @@
         <div class="cell small-12 medium-8 large-8">
           <div class="grid-x align-center-middle collapse">
             <div class="cell small-12 medium-12 large-6 color-block">
-              <h3>Bar Ravenite:</h3>
-              <h3>Open 2:00pm - 4:00pm</h3>
+              <h1>Bar Ravenite:</h1>
+              <h1>Open 2:00pm - 4:00am</h1>
             </div>
             <div class="cell small-12 medium-12 large-6 image-block">
-              <img src="./assets/images/amen-4.jpeg" />
+              <img src="./assets/images/Bar.jpg" />
             </div>
           </div>
         </div>
@@ -154,71 +157,74 @@
         <div class="cell small-12 medium-8 large-8">
           <div class="grid-x align-center-middle collapse">
             <div class="cell small-12 medium-12 large-6 image-block">
-              <img src="./assets/images/amen-5.jpeg" class="image-block" alt="full sized room" />
+              <img src="./assets/images/Pool.jpg" class="image-block" alt="full sized room" />
             </div>
             <div class="cell small-12 medium-12 large-6 color-block">
-              <h3>That's so Raven</h3>
-              <h3>Spa & Pool</h3>
+              <h1>That's so Raven</h1>
+              <h1>Spa & Pool</h1>
             </div>
           </div>
         </div>
       </div>
-      
     </section>
-    <!-- Descriptions/Pictures of the all the facilities -->
 
-    <!-- Reservation / Book Now Section -->
-    <!-- Pop-out reservation modal -->
-    <section id="reservation-section">
-      <address id="book-now"></address>
-      <div id="reservation-form" class="row">
-        <form action="">
-          <div>
-            <label for="arrival">Arrival Date:</label>
-            <input
-              name="arrival"
-              type="text"
-              id="arrivalPicker"
-              placeholder="Arrival Date"
-            />
-            <label for="departure">Departure Date:</label>
-            <input
-              name="departure"
-              type="text"
-              id="departPicker"
-              placeholder="Departure Date"
-            />
-          </div>
-          <div>
-            <label for="spinner">Number of Guest:</label>
-            <input id="spinner" name="value" />
-          </div>
-          <div class="form-group">
-            <label for="roomType"> Select a Bed Type:</label>
-            <select id="roomType" name="roomType" class="select-dropdown">
-              <option value="empty" disabled selected>Pick a bed type</option>
-              <option value="king">King size bed</option>
-              <option value="queen">Queen size bed</option>
-              <option value="full">Full size bed</option>
-            </select>
-          </div>
-          <div>
-            <button
-              data-open="settings-modal"
-              id="submit-btn"
-              class="btn"
-              type="button"
-            >
-              Submit
-            </button>
-          </div>
-          <div class="reveal" id="settings-modal" data-reveal>
-            <h1>Confirmation!</h1>
-            <p>Your reservation has been submitted.</p>
-          </div>
-        </form>
-      </div>
-    </section>
+  <!-- Reservation / Book Now Section -->
+  <section id="reservation-section" class="grid-container">
+    <address id="book-now"></address>
+      <form id="reservation-form" class="align-center-middle">
+        <!-- Datepicker -->
+        <div id="datepicker" class="align-center-middle collapse">
+          <label for="arrival">Arrival Date:</label>
+          <input
+            name="arrival"
+            type="text"
+            id="arrivalPicker"
+            placeholder="Arrival Date"
+          />
+          <label for="departure">Departure Date:</label>
+          <input
+            name="departure"
+            type="text"
+            id="departPicker"
+            placeholder="Departure Date"
+          />
+        </div>
+        <!-- Guest Count -->
+        <div id="guest-count" class="align-center-middle collapse">
+          <label for="spinner">Number of Guest:</label>
+          <input id="spinner" name="value" />
+        </div>
+        <!-- Room Selector -->
+        <div id="room-select" class="form-group align-center-middle collapse">
+          <label for="roomType"> Select a Bed Type:</label>
+          <select id="roomType" name="roomType" class="select-dropdown">
+            <option value="empty" disabled selected>Select a Suite Type</option>
+            <option value="king">Premium King Suite</option>
+            <option value="queen">Premium Queen Suite</option>
+            <option value="full">Premium Full Suite</option>
+          </select>
+        </div>
+        <!-- Submit Button -->
+        <div id="btn-container" class="align-center-middle collapse">
+          <button
+            id="submit-btn"
+            class="button secondary cell"
+            type="button"
+          >
+            Book Now!
+          </button>
+        </div>
+        <!-- Modal Pop up -->
+        <div class="modalBox text-center" id="reserve-modal">
+          <h2>Your reservation has been submitted.</h2>
+          <h3 class="lead">Thank you & enjoy your stay!</h3>
+          <p>“Those who dream by day are cognizant of many things which escape those who dream only by night.”</p>
+          <p>-Poe</p>
+          <button class="close-button button alert tiny" aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </form>
 
 <!-- Name, Address, Phone number, Email, Map Widget -->
 <footer id="contact-us">
@@ -238,19 +244,6 @@
     &#9742; Local 512.345.6545<br>
     &#9742; Toll-free 800.546.5466<br>
   </address>
-  <h5>Login</h5>
-  <form class="form-inline" action="/action_page.php">
-    <label for="email">Email:</label>
-    <input type="email" id=background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;"email" placeholder="Enter email" name="email">
-    <label for="pwd">Password:</label>
-    <input type="password" id="pwd" placeholder="Enter password" name="pswd">
-    <label>
-      <input type="checkbox" name="remember"> Remember me
-    </label>
-    <button type="submitted">Submit</button>
-  </form>
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>

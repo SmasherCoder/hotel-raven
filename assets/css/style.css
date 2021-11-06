@@ -1,18 +1,49 @@
+/* Page wide Styling */
 * {
   font-family: "El Messiri", sans-serif;
+  font-size: 24px;
 }
-section {
+
+body {
+  background-color: black;
+}
+
+.text-center {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
+.font-color {
+  color: #d65804;
 }
 
-ul {
-  text-align: center;
-  justify-content: center;
-  list-style-type: circle;
+h1 {
+  margin-top: 50px;
+  font-family: "Henny Penny", cursive;
+  text-decoration: underline;
+  font-size: 48px;
+}
+
+h5 {
+  font-family: "El Messiri", sans-serif;
+  font-size: 24px;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.8;
+  width: 50%;
+  margin: 10px auto;
+}
+
+/* Header Styling */
+.header-font {
+  font-family: "Henny Penny", cursive;
+  font-size: 42px;
+}
+
+.book-now {
+  font-style: italic;
+  text-decoration: underline;
 }
 
 form {
@@ -20,81 +51,21 @@ form {
 }
 
 header {
-  padding: 20px 35px;
+  padding: 5px 5px 0px 20px;
   background-color: #d65804;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* padding: 20px 35px;
-    background-image:linear-gradient(270deg,#662900,white,brown,yellow);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  header h1 {
-    font-weight: italic;
-    margin: 0;
-    font-size: 36px;
-    color: #000000;
-  }
-  
-  header a {
-    text-decoration: none;
-    color: #000000;
-  }
-  
-  header nav {
-    margin: 7px 0;
-  }
-  
-  header nav ul {
-    font-size: 16px;
-    font-weight: bolder;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-  
-  header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 2.55vw;
-  }
-  
-  HEADER / NAVBAR STYLES END
 
-Intro Image
-.hero {
-    background-image: url(../../towerbkg.jpg);
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    margin-top: 75px; */
-
-#weather {
-  top: 20;
-  max-width: 20vw;
-  height: 25vh;
-  z-index: 1;
-  left: 0;
-  background-color: beige;
-  text-align: center;
-  box-shadow: 8px black;
-}
 header h1 {
-  font-weight: italic;
-  margin: 0;
+  padding-top: 15px;
   font-size: 36px;
-  color: #fff;
+  color: black;
 }
 
 header a {
-  text-decoration: none;
-  color: #fff;
+  color: black;
 }
 
 header nav ul {
@@ -107,68 +78,50 @@ header nav ul {
 
 header nav ul li a {
   padding: 5px 45px;
-  font-weight: lighter;
   font-size: 1.5vw;
-  font-family: "El Messiri", sans-serif;
 }
 
-/* HEADER / NAVBAR STYLES END */
-/* Intro Image */
-
-.intro {
+/* Weather styling start */
+#weather {
+  max-width: 20vw;
+  padding: 10px 50px 50px 50px;
+  height: 20vh;
   text-align: center;
-  position: relative;
-  top: 20%;
 }
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-}
-/* intro title */
-.section-title {
-  font-family: "Henny Penny", cursive;
-  text-decoration: underline;
-  line-height: 1.7;
-  color: rgb(10, 10, 10);
-  width: 80%;
-  font-size: 50px;
-  margin: 20px auto;
-  color: rgb(63, 40, 3);
-}
-p {
+
+aside h6 {
   font-family: "El Messiri", sans-serif;
-  font-size: 20pt;
-  font-weight: 300;
-  line-height: 1.8;
-  color: rgb(63, 40, 3);
-  width: 80%;
   font-size: 20px;
-  margin: 10px auto;
+  color: black;
 }
-section {
-  padding: 60px;
+
+aside p {
+  font-size: 28px;
+  color: black;
 }
+/* Weather styling end */
+/* HEADER / NAVBAR STYLES END */
+
+/* Showcase Image Styling */
+
 .responsive {
   width: 100%;
   height: auto;
   margin: 0;
 }
 
-h1 {
-  margin-top: 50px;
-  font-family: "Henny Penny", cursive;
+/* Find us Styling on about.html */
+.find-us a {
+  color: black;
   text-decoration: underline;
-  font-size: 48px;
+  font-style: italic;
 }
 
-.text-center {
-  text-align: center;
-}
+/* block styling */
 
 .color-block {
   display: flex;
-  height: 28em;
+  height: 25em;
   padding: 20px;
   background-color: #d65804;
   text-align: center;
@@ -176,40 +129,114 @@ h1 {
   flex-direction: column;
 }
 
+.image-block {
+  width: 44em;
+  height: 25em;
+}
+
+.map-block {
+  height: 25em;
+}
+
+/* footer styling */
+
 footer {
+  padding-left: 15px;
+  width: 90%;
+  margin: 0 auto;
   background-color: #d65804;
 }
 
-.image-block {
-  width: 44em;
-  height: 28em;
+footer a {
+  color: black;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+#reservation-form {
+  background: #d65804;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+#reservation-section input {
+  background-color: black;
+  color: #fff;
+}
+
+#reservation-section select {
+  background-color: black;
+  color: #fff;
+}
+
+#reservation-section button {
+  background-color: black;
+}
+
+/* Modal */
+.modalBox {
+  display: none;
+  position: fixed;
+  z-index: 11111;
+  left: 25%;
+  top: 25%;
+  width: 55%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px #ccc;
+  background: rgb(69, 69, 69);
+  color: #d65804;
 }
 
 @media screen and (max-width: 724px) {
   .image-block {
-    height: 18em;
+    height: 17em;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
   }
 
   .color-block {
-    height: 19em;
+    height: 18em;
   }
-h5{
-  text-align: right;
-  padding-right: 30%;
-}
-.form-inline {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: right;
-  margin-left: 70%;
-  background-color: teal;
-}
-button{
-  background-color: blue; /* Blue*/
-  border: red;
-  color: white;
-  text-align: right;
-  margin-left: 80%;
-  height: auto;
 
+  header nav ul li a {
+    font-size: 18px;
+  }
+
+  h5 {
+    text-align: right;
+    padding-right: 30%;
+  }
+
+  .form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: right;
+    margin-left: 70%;
+    background-color: teal;
+  }
+
+  button {
+    background-color: blue; /* Blue*/
+    border: red;
+    color: white;
+    text-align: right;
+    margin-left: 80%;
+    height: auto;
+  }
+  
 }

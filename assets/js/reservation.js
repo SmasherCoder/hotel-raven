@@ -54,11 +54,16 @@ buttonEl.addEventListener("click", () => {
   ) {
     alert("All fields are required.");
   } else {
+    // Open confirmation modal
+    $("#reserve-modal").show();
     localStorage.setItem("reservationObj", JSON.stringify(reservationObj));
-    console.log(reservationObj);
 
     // Retrieve the object from storage and Log it
     var retrievedObject = localStorage.getItem("reservationObj");
     console.log("retrievedObject: ", JSON.parse(retrievedObject));
   }
+});
+// Closes the modal by clicking the "X" button
+$(".close-button").click(function () {
+  $("#reserve-modal").hide();
 });
