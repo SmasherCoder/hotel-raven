@@ -38,15 +38,20 @@
 
 * It is done when I find that the elements follow a logical structure independent of styling and positioning when I view the image elements.
 
+## Technologies Used: 
+* VS Code
+* Foundation CSS framework
+* jQuery & jQueryUI
 
 ## Website:
 
--
--
+* https://smashercoder.github.io/hotel-raven/
 
 ## Screenshot:
+![Screen Shot](https://user-images.githubusercontent.com/88693758/140619807-8eab2d4f-9e32-4cf7-bb0f-9e9434546164.png)
+
 
 ## Contribution:
 
 ### Travis Helms, Sabrina Elkins, Robert Warren, Pabitra Tamang, Taylor Keltgen
->>>>>>> 6f4d7cf5df5e5e1c9dabe49ebb7bf27b11bf97c1
+
